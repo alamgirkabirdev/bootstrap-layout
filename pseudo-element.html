@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Pseudo vai bon</title>
+    <style>
+        h1::before{
+            content:'Hello ';
+            color:lime;
+        }
+        h1::after{
+            content:' gelo';
+            color: aqua;
+        }
+        .section-title{
+            display: inline-block;
+        }
+        .section-title::after,
+        .section-title:hover::before{
+            content:'' ;
+            display: block;
+            background-color: blueviolet;
+            height: 2px;
+            width: 100%;
+
+        }
+        blockquote::before{
+            content: open-quote;
+            color: magenta;
+            font-size: 1.5em;
+        }
+        blockquote::after{
+            content: close-quote;
+            color: rgb(22, 61, 218);
+            font-size: 1.5em;
+        }
+        .input::after {
+            content: '*';
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Having fun with Pseudo pseudo  vai bon</h1>
+    <h1>Having fun with Pseudo pseudo  vondo bandobi</h1>
+    <section>
+        <h2 class="section-title">Best Quotes</h2>
+        <blockquote>
+            HOMESUCCESSENTREPRENEURSMOTIVATIONSTARTUPSQUOTESLIFECRYPTOPODCASTSVIDEOSCONTACTWRITE FOR US
+           
+            HOME SUCCESS ENTREPRENEURS MOTIVATION STARTUPS QUOTES LIFE CRYPTO PODCASTS VIDEOS CONTACT WRITE FOR US
+            MOTIVATIONHere’s Why You Need to Make Motivation Personal</blockquote>
+           <blockquote><h2>HOME SUCCESS ENTREPRENEURSMOTIVATIONSTARTUPSQUOTESLIFECRYPTOPODCASTSVIDEOSCONTACTWRITE FOR US
+            </h2></blockquote>
+    </section>
+    <section>
+        <p> <span class="input">Name</span> <input type="text" placeholder="Your name"> </p>
+    </section>
+</body>
+</html>
